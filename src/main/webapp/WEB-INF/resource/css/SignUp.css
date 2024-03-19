@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(159.25deg, #161616 -9.83%, #0d0d0d 112.33%);
+	overflow: hidden;
+}
+
+.outer-box {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: #10101000;
+}
+
+.inner-box {
+	position: relative;
+	z-index: 1;
+	width: 90%;
+	height: 90%;
+	background: #f8f8f808;
+	border-radius: 20px;
+	border: 1px solid #7a7a7a24;
+	padding: 20px;
+	display: flex;
+	gap: 50px;
+	align-items: center;
+	 transform: scale(0.5);
+    opacity: 0;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.gradient {
+	height: 90%;
+	width: 90%;
+	border-top: 3px solid blue;
+	border-bottom: 10px solid blue;
+	border-inline: 8px solid blue;
+	position: absolute;
+	filter: blur(100px);
+	border-radius: 50%;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-inline: 120px;
+	width: 100%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.info h2 {
+	font-size: 36px;
+	color: #fff;
+}
+
+.info p {
+	color: #afafaf;
+	font-size: 16px;
+}
+
+button {
+	background: #cccccc1c;
+	border: none;
+	outline: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 10px;
+	letter-spacing: .01em;
+	line-height: 18px;
+	padding: 10px 20px 10px 15px;
+	cursor: pointer;
+}
+
+.login:hover,button:hover{
+	opacity:0.7;
+}
+
+button img {
+	height: 16px;
+	width: 16px;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.input-name {
+	display: flex;
+	justify-content: space-between;
+}
+
+.input-field {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 76px;
+}
+
+.input-width {
+	width: 48%;
+}
+
+.input-field label {
+	color: #afafaf;
+	font-size: 14px;
+	position: absolute;
+}
+
+.input-field .input-area {
+	background-color: transparent;
+	border: 1px solid hsla(0, 0%, 100%, .05);
+	border-radius: 10px;
+	position: relative;
+	top: 28px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: .02em;
+	line-height: 120%;
+	height: 48px;
+	padding: 0 15px;
+	outline: none;
+}
+
+.checkbox label {
+	color: #afafaf;
+	font-size: 14px;
+}
+.login-btn{
+	position: relative;
+}
+
+.login {
+	background: #3e43fb;
+	padding: 15px 20px;
+	width: 100%;
+	text-align: center;
+	font-size:14px;
+	color:#fff;
+	border-radius:10px;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	user-select:none;
+}
+
+.create {
+	display: flex;
+	justify-content: space-between;
+}
+
+.signup label {
+	color: #555;
+	font-size: 14px;
+}
+
+.signup a {
+	color: #afafaf;
+	font-size: 14px;
+}
+.signup a:hover {
+	opacity: 0.7;
+}
+
+.card {
+	position: relative;
+	width:85vw;
+	border-radius: 24px;
+	box-shadow: 0px 5px 20px 0px #7b7b7b6e;
+}
+
+.card img {
+	position: relative;
+	width:100%;
+	border-radius: 24px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.input-field .input-area.danger {
+	border: 1px solid #e65959;
+}
+
+.input-field label.danger {
+	color: #e65959;
+}
+
+.input-field .required {
+	color: #e65959;
+    position: relative;
+    bottom: -26px;
+    font-size: 12px;
+}
+.msg{
+    position: absolute;
+    bottom: 18px;
+    color: #e65959;
+    padding-inline: 120px;
+	    font-size: 14px;
+}
+@media screen and (max-width:1200px){
+.details{
+padding-inline:10px;
+gap:10px;
+}
+}
+@media screen and (max-width:768px){
+.info h2{
+    font-size: 1.5rem;
+}
+.info p {
+    font-size: 0.8rem;
+}
+button{
+font-size: 0.8rem;
+}
+.input-field label{
+ font-size: 0.8rem;
+}
+.input-field input{
+ font-size: 0.8rem;
+}
+.checkbox label{
+font-size: 0.8rem;
+}
+.login{
+font-size: 0.8rem;
+}
+.signup label{
+    font-size: 0.8rem;
+}
+.signup a{
+font-size: 0.8rem;
+}
+.inner-box{
+gap:10px;
+padding: 10px;
+}
+
+
+}
+@media screen and (max-width:425px){
+.card{
+display:none;
+}
+.msg{
+	bottom: 115px;
+    padding-inline: 10px;
+    font-size: 0.8rem;
+}
+}

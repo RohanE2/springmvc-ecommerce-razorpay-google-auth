@@ -1,0 +1,373 @@
+* {
+    /* resset the user sstyle sheet */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *Making primary varibales */
+:root {}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111111;
+    color: white;
+    
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+    line-height: 1.8rem;
+}
+
+a {
+    /* border: 1px solid red; */
+    text-decoration: none;
+    display: inline-block;
+}
+i{
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+/* utility classes */
+.container {
+    /* border: 1px solid red; */
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    /* overflow:hidden; */
+    gap: 40px;
+
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-link {
+    color: #ffffff;
+}
+
+.hover-link:hover {
+    color: #EB4149;
+    transition: 02s ease-out;
+}
+
+.primary-button {
+    background-image: linear-gradient(to right, #EB4149, #eb414936);
+    border-radius: 6px;
+    /* font-weight: 700; */
+    color: #ffffff;
+    padding: 10px 16px;
+
+}
+
+/* img{
+    width: 10%;
+} */
+
+/* NavBar */
+
+.main-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 1px solid #1d1b21;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    transition: top 0.3s;
+}
+.main-nav.scrolled {
+    top: -100px;
+}
+
+
+.company-logo img {
+    width: 100px;
+}
+
+.nav-links {
+    flex-basis: 730px;
+}
+
+.nav-links ul {
+    justify-content: start;
+    gap: 40px;
+}
+
+.search {
+    /* border: 1px solid #343232; */
+    background-color: #1B1A1A;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.search .input input {
+    background-color: #1B1A1A;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+.add {
+    gap: 15px;
+}
+.cart{
+    position: relative;
+}
+.cartAmount{
+    /* border: 1px solid saddlebrown; */
+    position: absolute;
+    top: 18px;
+    right: -18px;
+    color: #cac4c4;
+    /* font-size: 18px; */
+    background-color: red;
+    border-radius:4px;
+}
+.main{
+position: relative;
+top:100px;
+}
+.heading{
+text-align: center;
+margin-bottom:20px;
+}
+.info{
+justify-content:center;
+gap:50px;
+align-items: flex-start;
+}
+.bag-content {
+    margin-block: 20px;
+    background-color: #6262622e;
+    padding: 10px;
+    border-radius: 15px;
+    gap: 20px;
+    width:453px;
+}
+.bag-img {
+    width: 125px;
+    height: 125px;
+    background-color: #3a3a3a66;
+    border-radius: 10px;
+}
+.bag-img img {
+    width: 125px;
+    height: 125px;
+    transform: scaleX(-1);
+}
+.bag-text p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+.bag-text p:nth-child(3), .bag-text p:nth-child(4), .bag-text p:nth-child(5) {
+    color: gray;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+.shipping-address{
+   width:360px;
+   display:flex;
+   flex-direction:column;
+   gap:5px;
+   background-color: #6262622e;
+   border-radius: 15px;
+   padding:20px;
+   margin-block:20px;
+   
+}
+.shipping-address p{
+	font-size: 1rem;
+    line-height: 1.4rem;
+ 
+}
+.details{
+gap:50px;
+justify-content: space-between;
+}
+.details p:nth-child(1){
+color:gray;
+}
+.hr{
+    border: 1px solid #494949d1;
+    width:100%;
+}
+.address p{
+color:gray;
+}
+.payment{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff14;
+    width: 510px;
+    padding-inline: 20px;
+    padding-block: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 15px;
+  	backdrop-filter: blur(3px);
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 9999;
+}
+
+.payment p{
+	font-size: 0.9rem;
+    line-height: 1.4rem;
+    color:#999999;
+}
+.payment h2{
+	color:#dcdcdc;
+}
+.payment h1{
+	    margin-bottom: 15px;
+}
+.payment-icon{
+    position: absolute;
+    top: -36px;
+}
+.payment-icon img{
+    width:80px;
+}
+
+.payment-details{
+    border: 1px solid #80808052;
+    border-radius: 5px;
+    width: 200px; 
+    padding: 10px;
+}
+.payment-details p{
+ color:#ffffff;
+}
+.payment-details p:nth-child(1){
+ color:#999999;
+}
+
+.payment-warpper{
+	gap:15px;
+}
+
+.payment .hr{
+	margin-block:15px;
+	border: 1px solid #ffffff21;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+.details-zoom-in {
+    transform: translate(-50%, -50%) scale(1);
+}
+@media screen and (max-width:995px) {
+	.nav-toggle{
+		display:block;
+	}
+	.nav-links{
+	display: none;
+	}
+	.search {
+	display: none;
+	}
+	
+	.hover-link{
+	margin-inline:5px;
+	}
+	.toggle-add-wrapper {
+    display: flex;
+    gap: 10px;
+}
+.nav-links ul{
+	flex-direction: column;
+	gap:15px;
+	}
+	.nav-links-active {
+    display: block;
+    position: absolute;
+    padding-block: 20px;
+    top: -650px;
+    height: 40vh;
+    width: 100vw;
+    left:0;
+    background: #1f1f1fe8;
+    border-radius: 45px;
+    transition: .3s;
+    backdrop-filter: blur(13px);
+}
+.nav-links-active-top{
+top: 120px;
+}
+.info{
+flex-direction:column;
+gap:0px;
+align-items: center;
+}
+.bag-content{
+    width: 95vw;
+}
+.shipping-address{
+    width: 95vw;
+       
+}
+}
+@media screen and (max-width:569px){
+.payment {
+    width: 85vw;
+    height: 85vh;
+    overflow: scroll;
+	padding-block: 0px;
+	padding-bottom: 10px;
+	
+}
+.payment-warpper{
+flex-direction:column;
+}
+.payment-icon {
+    position: relative;
+    top: 0;
+}
+}
+@media screen and (max-width:425px){
+.details {
+gap:10px;
+}
+.bag-content{
+gap:15px;
+}
+.shipping-address{
+padding: 10px;
+}
+}
