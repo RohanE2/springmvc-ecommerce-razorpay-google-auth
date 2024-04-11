@@ -36,10 +36,16 @@ Before running this application, make sure you have the following installed:
 
 ## Usage
 
-1. Open your web browser and navigate to [the dashboard](http://cleatshub.store/mvcproject1/dashboard) to access the admin dashboard. 
+## Usage
+
+1. Open your web browser and navigate to [CleatsHub E-commerce](http://cleatshub.store/mvcproject1/) to access the website. (http://cleatshub.store/mvcproject1/)
+2. To access the admin dashboard, go to [the dashboard](http://cleatshub.store/mvcproject1/dashboard) with the following credentials:(http://cleatshub.store/mvcproject1/dashboard)
    - Username: user
    - Password: user123
-2. Users can register or login using Google authentication.
-3. Browse products, add them to the cart or wishlist, and proceed to checkout.
-4. Choose Razorpay as the payment method and complete the payment.
-5. Admins can log in and manage products, orders, and transactions from the admin dashboard.
+3. Users can register or login using Google authentication.
+4. Browse products, add them to the cart or wishlist, and proceed to checkout.
+5. Choose Razorpay as the payment method and complete the payment.
+6. Admins can log in and manage products, orders, and transactions from the admin dashboard.
+
+Feel free to explore the website!
+
