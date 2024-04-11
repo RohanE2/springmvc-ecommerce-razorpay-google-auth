@@ -39,7 +39,7 @@ Before running this application, make sure you have the following installed:
 ## Usage
 
 1. Open your web browser and navigate to [CleatsHub E-commerce](http://cleatshub.store/mvcproject1/) to access the website. (http://cleatshub.store/mvcproject1/)
-2. To access the admin dashboard, go to [the dashboard](http://cleatshub.store/mvcproject1/dashboard) with the following credentials:(http://cleatshub.store/mvcproject1/dashboard)
+2. To access the admin dashboard, go to [the dashboard](http://cleatshub.store/mvcproject1/dashborad) with the following credentials:(http://cleatshub.store/mvcproject1/dashborad)
    - Username: user
    - Password: user123
 3. Users can register or login using Google authentication.
