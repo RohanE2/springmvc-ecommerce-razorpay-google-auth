@@ -1,6 +1,6 @@
 # Spring MVC E-commerce Website with Razorpay Integration and Google Authentication
 
-This project is a Spring MVC-based e-commerce website that includes Razorpay integration for payment processing and Google authentication for user registration and login. It utilizes a MySQL database to store user information, product details, orders, and payment transactions.
+This project is a Spring MVC-based e-commerce website that includes Razorpay integration for payment processing and Google authentication for user registration and login. It utilizes a MySQL database to store user information, product details, orders, and payment transactions. The application is deployed on AWS using EC2 for hosting, RDS for the database, and S3 for storing static files.
 
 ## Features
 
@@ -20,6 +20,9 @@ This project is a Spring MVC-based e-commerce website that includes Razorpay int
 - Google OAuth for User Authentication
 - Razorpay API for Payment Gateway Integration
 - HTML, CSS, and JavaScript for Frontend Development
+- AWS EC2 for Application Hosting
+- AWS RDS for MySQL Database
+- AWS S3 for Static File Storage
 
 ## Prerequisites
 
@@ -33,9 +36,10 @@ Before running this application, make sure you have the following installed:
 
 ## Usage
 
-1. Open your web browser and navigate to the URL where the application is deployed.
+1. Open your web browser and navigate to [the dashboard](http://cleatshub.store/mvcproject1/dashboard) to access the admin dashboard. 
+   - Username: user
+   - Password: user123
 2. Users can register or login using Google authentication.
 3. Browse products, add them to the cart or wishlist, and proceed to checkout.
 4. Choose Razorpay as the payment method and complete the payment.
 5. Admins can log in and manage products, orders, and transactions from the admin dashboard.
-
